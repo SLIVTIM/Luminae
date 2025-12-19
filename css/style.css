@@ -135,20 +135,17 @@ ul {
 .social1 {
     height: 24px;
     width: 24px;
-    background-image: url(/logos/Instagram.svg);
 }
 
 .social2 {
     align-self: center;
     height: 18px;
     width: 12px;
-    background-image: url(/logos/FB.svg);
 }
 
 .social3 {
     height: 24px;
     width: 24px;
-    background-image: url(/logos/Telegram.svg);
 }
 
 .section1 > div {
