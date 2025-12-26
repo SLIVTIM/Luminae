@@ -1,0 +1,14 @@
+:root {
+    --search-border-col: rgb(175, 175, 175);
+    --title-col: rgb(18, 18, 18);
+    --element-dark-col: #262626;
+    --nav-col: rgb(70, 70, 70);
+    --nav-hover-col: rgb(255, 122, 0);
+    --view-all-hover-col: rgb(145, 145, 145);
+    --general-col: white;
+    --general-bit-darker-col: rgb(255, 255, 255);
+    --general-bit-darker-hover-col: rgb(207, 207, 207);
+    --description-col: rgb(188, 188, 188);
+    --product-text-col: rgb(122, 122, 122);
+    --new-arivals: #04c561;
+}

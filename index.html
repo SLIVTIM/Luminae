@@ -3,80 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest arrivals of high-quality apparel and accessories from reputable brands. Find your perfect style today.">
+    <meta name="authro" content="slivtim">
+    <link rel="stylesheet" href="css/css-variables.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Luminae</title>
 </head>
 <body>
     <header>
         <div class="title-container">
-            <div class="logo"></div>
+            <div class="logo"><a href="index.html"><img src="logos/Main_Logo.svg" alt="website-logo"></a></div>
             <h1><a href="index.html">Luminae</a></h1>
         </div>
         <nav>
             <div class="search">
-                <input type="text" class="search-bar">
-                <select name="categories" id="categories" class="select-category">
-                    <option value="All categories">All categories</option>
-                    <option value="Electronics">Electronics</option>
-                    <option value="Cloth">Cloth</option>
-                    <option value="Instruments">Instruments</option>
-                </select>
+                <label for="search-products">
+                    <input type="text" id="search-products" class="search-bar">
+                </label>
+                <label for="search-categories">
+                    <select name="categories" id="search-categories" class="select-category">
+                        <option value="All categories">All categories</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Cloth">Cloth</option>
+                        <option value="Instruments">Instruments</option>
+                    </select>
+                </label>
                 <div class="search-logo"></div>
             </div>
-            <div class="nav1">
+            <div class="nav1" role="navigation">
                 <ul>
-                    <li>About us</li>
-                    <li>Blog</li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Blog</a></li>
                 </ul>
                 <ul>
-                    <li>Contact us</li>
-                    <li>Help&support</li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Help&support</a></li>
                 </ul>
             </div>
-            <div class="social-container">
-                <span class="social1"><img src="logos/Instagram.svg" alt="instagram"></span>
-                <span class="social2"><img src="logos/FB.svg" alt="facebook"></span>
-                <span class="social3"><img src="logos/Telegram.svg" alt="telegram"></span>
+            <div class="social-container" role="link">
+                <span class="social1"><a href="https://www.instagram.com" target="_blank"><img src="logos/Instagram.svg" alt="instagram"></a></span>
+                <span class="social2"><a href="https://www.facebook.com" target="_blank"><img src="logos/FB.svg" alt="facebook"></a></span>
+                <span class="social3"><a href="https://telegram.org" target="_blank"><img src="logos/Telegram.svg" alt="telegram"></a></span>
             </div>
         </nav>
     </header>
     <section class="section1">
         <div>
             <div>
-                <div class="categories-logo"></div>
+                <div class="categories-logo"><img src="logos/categories.svg" alt="categories-logo"></div>
                 <h2>Categories</h2>
             </div>
-            <select class="moneytypes" name="moneytypes" id="moneytypes">
-                <option value="USD">USD</option>
-                <option value="RUB">RUB</option>
-                <option value="EURO">EURO</option>
-                <option value="POUND">POUND</option>
-            </select>
-            <select class="language" name="language" id="language">
-                <option value="English">English</option>
-                <option value="Russian">Russian</option>
-                <option value="Spanish">Spanish</option>
-                <option value="French">French</option>
-            </select>
+            <label for="moneytypes">
+                <select class="moneytypes" name="moneytypes" id="moneytypes">
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="EURO">EURO</option>
+                    <option value="POUND">POUND</option>
+                </select>
+            </label>
+            <label for="language">
+                <select class="language" name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                </select>
+            </label>
             <hr class="devider1">
-            <img class="Men-cosmetic-image" src="images/Men cosmetic.png" alt="Men-cosmetic">
+            <img class="Men-cosmetic-image" src="images/Men cosmetic.avif" alt="Men-cosmetic">
             <div class="Men-cosmetic-text-container">
-                <h4 class="Men-cosmetic-text1">Weekly Men's Toiletries Coupons.</h4>
+                <h3 class="Men-cosmetic-text1">Weekly Men's Toiletries Coupons.</h3>
                 <p class="Men-cosmetic-text2">We extend exclusive discounts to our male clientele</p>
             </div>
             <hr class="devider1">
             <div class="container1">
                 <div class="sign-in">
-                    <img class="logo1" src="logos/Sign in.svg">
-                    <h3><a href="#">Sign in</a></h3>
+                    <img class="logo1" src="logos/Sign in.svg" alt="sign-in-logo">
+                    <h3><a href="">Sign in</a></h3>
                 </div>
                 <div class="Favorites">
-                    <img class="logo2" src="logos/Favorides.svg">
-                    <h3><a href="#">Favorites</a></h3>
+                    <img class="logo2" src="logos/Favorides.svg" alt="favorites-logo">
+                    <h3><a href="">Favorites</a></h3>
                 </div>
                 <div class="Card">
-                    <img class="logo3" src="logos/Card.svg">
-                    <h3><a href="#">Card</a></h3>
+                    <img class="logo3" src="logos/Card.svg" alt="Card-amount-indicator">
+                    <h3><a href="">Card</a></h3>
                     <div class="Card-amount-indicator"><h2>3</h2></div>
                 </div>
             </div>
@@ -99,7 +110,7 @@
             </nav>
         </article>
         <article>
-            <img src="images/left.png" alt="left">
+            <img src="images/left.avif" alt="left">
             <div>
                 <div>
                     <h3>Summer Essentials</h3>
@@ -113,7 +124,7 @@
                 <h2>KIMONOS, CAFTANS & PAREOS</h2>
                 <h3>Poolside glam included From $4.99</h3>
                 <button>
-                    <img class="shop-now-logo" src="logos/shop-now-icon.svg">
+                    <img class="shop-now-logo" src="logos/shop-now-icon.svg" alt="shop-now-logo">
                     <h3>SHOP NOW</h3>
                 </button>
             </div>
@@ -124,7 +135,7 @@
             <h2>Flash Sales</h2>
             <a href="">View all</a>
         </div>
-        <div class="product-wrapper">
+        <div class="product-wrapper" role="article">
             
         </div>
     </section>
@@ -133,7 +144,7 @@
             <h2>Trending must-haves</h2>
             <a href="">View all</a>
         </div>
-        <div class="must-haves-wrapper">
+        <div class="must-haves-wrapper" role="article">
             
         </div>
     </section>
@@ -142,7 +153,7 @@
             <h2>Top 100</h2>
             <a href="">View all</a>
         </div>
-        <div class="top100card-Wrapper">
+        <div class="top100card-Wrapper" role="article">
             
         </div>
     </section>
@@ -153,7 +164,7 @@
                 <h2>Throwback Shirts & <br> all-day dressed</h2>
                 <h3><a href="">Explore all category</a></h3>
             </div>
-            <img src="images/Throwback Shirts & all-day dressed.png" alt="Throwback Shirts & all-day dressed">
+            <img src="images/Throwback Shirts & all-day dressed.avif" alt="Throwback Shirts & all-day dressed">
         </div>
         <div>
             <div>
@@ -161,7 +172,7 @@
                 <h2>Get in gym essentials</h2>
                 <h3><a href="">Explore all category</a></h3>
             </div>
-            <img src="images/Get in gym essentials.png" alt="Get in gym essentials">
+            <img src="images/Get in gym essentials.avif" alt="Get in gym essentials">
         </div>
     </section>
     <section class="section7">
@@ -171,7 +182,7 @@
                 <h2>MAGSAFE</h2>
                 <h3>Snap on a magnetic case, wallet, or both. And get faster wireless charging.</h3>
             </div>
-            <img src="images/Iphone.png" alt="Iphone">
+            <img src="images/Iphone.avif" alt="Iphone">
             <img src="logos/right_arrow.svg" alt="right_arrow">
         </div>
         <div>
@@ -181,7 +192,7 @@
                     <h2>Lets play dress up</h2>
                     <h3><a href="">Explore all category</a></h3>
                 </div>
-                <img src="images/The_pinky_barbie_edition.png" alt="Throwback Shirts & all-day dressed">
+                <img src="images/The_pinky_barbie_edition.avif" alt="Throwback Shirts & all-day dressed">
             </div>
             <div>
                 <div>
@@ -189,7 +200,7 @@
                     <h2>poolside glam include</h2>
                     <h3><a href="">Explore all category</a></h3>
                 </div>
-                <img src="images/Best_sellets_everyone_love.png" alt="Get in gym essentials">
+                <img src="images/Best_sellets_everyone_love.avif" alt="Get in gym essentials">
             </div>
         </div>
     </section>
@@ -198,35 +209,37 @@
             <h2>Luminae Store</h2>
             <p>Register your email not to miss the last minutes off+ Free delivery</p>
             <div class="email-text-bar">
-                <input type="text" placeholder="Enter Your Email" class="text-bar-email">
-                <img src="logos/email-logo.svg" alt="email-logo">
+                <label for="user-email" class="label-email">
+                    <input type="text" id="user-email" placeholder="Enter Your Email" class="text-bar-email">
+                    <img src="logos/email-logo.svg" alt="email-logo">
+                </label>
             </div>
         </div>
         <div class="credits">
             <div>
-                <p>Company</p>
-                <p>About Us</p>
-                <p>Our Store</p>
-                <p>Contact us</p>
+                <p><a href="">Company</a></p>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Our Store</a></p>
+                <p><a href="">Contact us</a></p>
             </div>
             <div>
-                <p>Career Opportunities</p>
-                <p>Selling Programs</p>
-                <p>Advertise</p>
-                <p>Cooperation</p>
+                <p><a href="">Career Opportunities</a></p>
+                <p><a href="">Selling Programs</a></p>
+                <p><a href="">Advertise</a></p>
+                <p><a href="">Cooperation</a></p>
             </div>
             <div>
-                <p>How to Buy</p>
-                <p>Making Payments</p>
-                <p>Delivery Options</p>
-                <p>Buyer Protection</p>
-                <p>New User Guide</p>
+                <p><a href="">How to Buy</a></p>
+                <p><a href="">Making Payments</a></p>
+                <p><a href="">Delivery Options</a></p>
+                <p><a href="">Buyer Protection</a></p>
+                <p><a href="">New User Guide</a></p>
             </div>
             <div>
-                <p>Help</p>
-                <p>Contacts Us</p>
-                <p>FAQ</p>
-                <p>Privacy Policy</p>
+                <p><a href="">Help</a></p>
+                <p><a href="">Contacts Us</a></p>
+                <p><a href="">FAQ</a></p>
+                <p><a href="">Privacy Policy</a></p>
             </div>
         </div>
     </section>
@@ -237,12 +250,14 @@
                 <img src="logos/mastercard_logo.svg" alt="mastercard">
                 <img src="logos/paypal_logo.svg" alt="paypal">
             </div>
-            <select class="language" name="language" id="language">
-                <option value="English">English</option>
-                <option value="Russian">Russian</option>
-                <option value="Spanish">Spanish</option>
-                <option value="French">French</option>
-            </select>
+            <label for="language">
+                <select class="language" name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                </select>
+            </label>
         </div>
         <hr>
         <div>
@@ -255,6 +270,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/product-selector.js"></script>
 </body>
 </html>

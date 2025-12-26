@@ -1,66 +1,9 @@
-const productarray = [
-    {
-        timelefthours: "12",
-        timeleftminutes: "43",
-        timeleftseconds: "12",
-        img: 'images/photo_bag.png',
-        name: "Tonny Black",
-        description: "Shoulder bag-White-Plain",
-        stars: 4,
-        reviewamount: 54, 
-        currentprice: 69.99,
-        previousprice: 129.99,
-        discount: 40
-    },
-
-    {
-        timelefthours: "02",
-        timeleftminutes: "05",
-        timeleftseconds: "32",
-        img: 'images/photo_shoe.png',
-        name: "Reebok",
-        description: "Women's Powder sneakers",
-        stars: 2,
-        reviewamount: 38, 
-        currentprice: 112.02,
-        previousprice: 129.99,
-        discount: 20
-    },
-
-    {
-        timelefthours: "02",
-        timeleftminutes: "14",
-        timeleftseconds: "21",
-        img: 'images/photo_bag2.png',
-        name: "Patso",
-        description: "Shoulder bag-Pink-Plain",
-        stars: 3,
-        reviewamount: 17, 
-        currentprice: 69.99,
-        previousprice: 129.99,
-        discount: 40
-    },
-
-    {
-        timelefthours: "25",
-        timeleftminutes: "11",
-        timeleftseconds: "02",
-        img: 'images/photo_shoe2.png',
-        name: "Sketchers",
-        description: "Sport-shoe 2102",
-        stars: 5,
-        reviewamount: 44, 
-        currentprice: 80.00,
-        previousprice: 129.99,
-        discount: 30
-    },
-];
-
 const productContainer = document.getElementsByClassName('product-wrapper')[0];
 
 productarray.forEach((product) => {
     const productCard = document.createElement('article');
     productCard.classList.add('product');
+    productCard.id = productarray.id;
     
     const title = document.createElement('div');
     const titletext = document.createElement('h3');
@@ -98,6 +41,7 @@ productarray.forEach((product) => {
 
     const image = document.createElement('img');
     image.src = product.img;
+    image.alt = product.alt;
 
     const name = document.createElement('h3');
     name.textContent = product.name;
@@ -153,35 +97,6 @@ productarray.forEach((product) => {
 // ---------------------------------------
 
 
-const mustHavesArray = [
-    {
-        img: 'images/must-haves1-image.png',
-        name: "Cool & Sexy Calvin Klein",
-        description: "Dotted dress-Casual",
-        price: "89",
-        alt: "must-haves1",
-        NewArivals: true
-    },
-
-    {
-        img: 'images/must-haves2-image.png',
-        name: "Cool & Sexy Calvin Klein",
-        description: "Dotted dress-Casual",
-        price: "76",
-        alt: "must-haves2",
-        NewArivals: false
-    },
-
-    {
-        img: 'images/must-haves3-image.png',
-        name: "beige coat Zara",
-        description: "Cream-Brown-Formal",
-        price: "102",
-        alt: "must-haves3",
-        NewArivals: true
-    }
-]
-
 const mustHavesWrapper = document.getElementsByClassName('must-haves-wrapper')[0];
 
 mustHavesArray.forEach((mustHaves) => {
@@ -193,6 +108,7 @@ mustHavesArray.forEach((mustHaves) => {
         
     const newArivalslogo = document.createElement('img');
     newArivalslogo.src = 'logos/New_Arivals.svg';
+    newArivalslogo.alt = "new arivals logo";
     const newArivalstext = document.createElement('p');
     newArivalstext.textContent = "New Arivals";
     newArivalsWrapper.append(newArivalslogo, newArivalstext);  
@@ -228,56 +144,6 @@ mustHavesArray.forEach((mustHaves) => {
 
 // ---------------------------------------
 
-
-const top100Array = [
-    {
-        img: 'images/top100_image_1.png',
-        alt: "top100-1",
-        name: "Mango",
-        description: "Kimono & Caftan - Black - Regular fit",
-        stars: 5,
-        ratingAmount: 523,
-        currentprice: 228,
-        previousprice: 290, 
-        discount: 10
-    },
-
-    {
-        img: 'images/top100_image_2.png',
-        alt: "top100-2",
-        name: "Zara",
-        description: "Midi top - Daily fit",
-        stars: 4,
-        ratingAmount: 289,
-        currentprice: 95,
-        previousprice: 145, 
-        discount: 7
-    },
-    
-    {
-        img: 'images/top100_image_3.png',
-        alt: "top100-3",
-        name: "Uniqlo",
-        description: "Midi atlas Slim fit - bohemian",
-        stars: 4,
-        ratingAmount: 86,
-        currentprice: 125,
-        previousprice: 156, 
-        discount: 8
-    },
-        
-    {
-        img: 'images/top100_image_4.png',
-        alt: "top100-4",
-        name: "Mango dress",
-        description: "Kimono & Caftan - Colorful - Night club fit",
-        stars: 3,
-        ratingAmount: 121,
-        currentprice: 365,
-        previousprice: 487, 
-        discount: 15
-    },
-]
 
 const top100Wrapper = document.getElementsByClassName('top100card-Wrapper')[0];
 
