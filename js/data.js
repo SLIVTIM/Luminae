@@ -148,3 +148,19 @@ const top100Array = [
         discount: 15
     },
 ]
+
+
+const productDetailsArray = [
+    {
+        imgMain: '../images-product/Madamra_bag_example-1.avif',
+        imgExample1: '../images-product/Madamra_bag_example-1.avif',
+        imgExample2: '../images-product/Madamra_bag_example-2.avif',
+        imgExample3: '../images-product/Madamra_bag_example-3.avif',
+        imgExample4: '../images-product/Madamra_bag_example-4.avif',
+        imgExample5: '../images-product/Madamra_bag_example-5.avif',
+        name: "Madamra Yellow Women's Quilted Shoulder Bag",
+        price: "39.99",
+        sizeClass: 'choose-size-bag',
+        colorClass: 'choose-color-bag-yellow'
+    }
+]

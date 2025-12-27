@@ -104,21 +104,21 @@
         </nav>
         <section>
             <article class="image-sidepanel">
-                <img src="../images-product/Madamra_bag_example-1.avif" alt="yellow_bag_example-1">
-                <img src="../images-product/Madamra_bag_example-2.avif" alt="yellow_bag_example-2">
-                <img src="../images-product/Madamra_bag_example-3.avif" alt="yellow_bag_example-3">
-                <img src="../images-product/Madamra_bag_example-4.avif" alt="yellow_bag_example-4">
-                <img src="../images-product/Madamra_bag_example-5.avif" alt="yellow_bag_example-5">
+                <img alt="yellow_bag_example-1" id="sidePanelImg-1">
+                <img alt="yellow_bag_example-2" id="sidePanelImg-2">
+                <img alt="yellow_bag_example-3" id="sidePanelImg-3">
+                <img alt="yellow_bag_example-4" id="sidePanelImg-4">
+                <img alt="yellow_bag_example-5" id="sidePanelImg-5">
             </article>
             <article class="image-display">
-                <img src="../images-product/Madamra_bag_example-2.avif" alt="yellow_bag_example-2">
+                <img alt="yellow_bag_example-2" id="main-img">
             </article>
             <article class="information">
                 <div class="name">
-                    <h2>Madamra Yellow Women's Quilted Shoulder Bag</h2>
-                    <h3>$39.99</h3>
+                    <h2 id="name">Madamra Yellow Women's Quilted Shoulder Bag</h2>
+                    <h3 id="price-name">$39.99</h3>
                 </div>
-                <div class="choose-size-bag">
+                <div id="choose-size">
                     <h3>Size</h3>
                     <div>
                         <div>
@@ -129,7 +129,7 @@
                         <p>Size guideline</p>
                     </div>
                 </div>
-                <div class="choose-color-bag-yellow">
+                <div id="choose-color">
                     <h3>Color</h3>
                     <div>
                         <label>
@@ -152,11 +152,11 @@
                 <div class="quantity">
                     <h3>Quantity</h3>
                     <div>
-                        <button>
+                        <button id="quantity-minus">
                             <div></div>
                         </button>
-                        <h4>2</h4>
-                        <button>
+                        <h4 id="quantity-number">2</h4>
+                        <button id="quantity-plus">
                             <div></div>
                             <div></div>
                         </button>
@@ -164,7 +164,7 @@
                     <h4>50 available / 104 sold</h4>
                 </div>
                 <div class="total-price">
-                    <h2>$79.98</h2>
+                    <h2 id="total-price">$79.98</h2>
                     <hr>
                     <div>
                         <div>
@@ -284,9 +284,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="review-devider"></div>
+                <div class="reviews-second-part">
+                    <div class="single-review">
+                        <div class="single-review-upper-part">
+                            <div>
+                                <div>
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h3></h3>
+                                <div></div>
+                                <img src="" alt="">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </section>
+    <script src="../js/data.js"></script>
     <script src="../js/product-page-functionality.js"></script>
 </body>
 </html>
