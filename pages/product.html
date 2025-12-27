@@ -175,27 +175,23 @@
                     </div>
                 </div>
                 <div class="confirm"> 
-                    <button><h3>SHOP NOW</h3></button>
-                    <button><img src="../logos-product/add_to_basket-logo.svg" alt="add_to_basket-logo"><h3>ADD TO BASKET</h3></button>
+                    <a href=""><button><h3>SHOP NOW</h3></button></a>
+                    <a href=""><button><img src="../logos-product/add_to_basket-logo.svg" alt="add_to_basket-logo"><h3>ADD TO BASKET</h3></button></a>
                 </div>
             </article>
-            <article class="suggestions">
-                <h2 class="suggestion-title">You Might Also Like</h2>
-                <div class="suggestions-product-card">
-                    <img src="../images-product/Charles&Keith_black_bag_example-1.avif" alt="black-bag-example-1">
-                    <h2>Duo Quilted Front-Pocket Hobo Bag</h2>
-                    <h2>$1800</h2>
-                </div>
+            <article class="fav-card-container">
+                <a href=""><button><img src="../logos-product/Heart.svg" alt="Heart-icon"></button></a>
+                <a href=""><button><img src="../logos-product/Card.svg" alt="Card-icon"></button></a>
             </article>
         </section>
         <section class="details">
             <article class="details-reviews-shipping_payment">
-                <button><h2>PRODUCT DETAILS</h2></button>
+                <button autofocus><h2>PRODUCT DETAILS</h2></button>
                 <button><h2>REVIEWS</h2></button>
                 <button><h2>SHIPPING & PAYMENT</h2></button>
             </article>
             <hr>
-            <article class="product-details">
+            <article class="product-details display-none">
                 <div>
                     <h2>Product Description</h2>
                     <p>The yellow bag features a quilted, padded texture with a diamond-grid pattern and a vibrant lemon-yellow finish.</p>
@@ -235,8 +231,62 @@
                     </div>
                 </div>
             </article>
-            <button class="show-more-button"><img src="arrow-down.svg" alt="arrow-down-icon"><h2>SHOW MORE</h2></button>
+            <article class="show-more-background-notshown display-none">
+                <button class="show-more-button" id="showMoreButton"><img src="../logos-product/arrow-down.svg" alt="arrow-down-icon"><h2>SHOW MORE</h2></button>
+                <button class="show-more-button" id="showLessButton"><img src="../logos-product/arrow-up.svg" alt="arrow-down-icon"><h2>SHOW LESS</h2></button>
+            </article>  
+            <article class="reviews">
+                <div class="reviews-first-part">
+                    <div class="rating-left-side">
+                        <h2>Total review rate</h2>
+                        <p>Average rating (10 Reviews & 125 Ratings)</p>
+                        <div>
+                            <div class="star-container">
+                                <img src="../logos-product/full-star.svg" alt="full-star-icon">
+                                <img src="../logos-product/full-star.svg" alt="full-star-icon">
+                                <img src="../logos-product/full-star.svg" alt="full-star-icon">
+                                <img src="../logos-product/full-star.svg" alt="full-star-icon">
+                                <img src="../logos-product/half-star.svg" alt="half-star-icon">
+                            </div>
+                            <p>4.8/5</p>
+                        </div>
+                        <a href=""><button><h3>Write a customer review</h3></button></a>
+                    </div>
+                    <div class="rating-bars">
+                        <div>
+                            <p>5 Stars</p>
+                            <p>4 Stars</p>
+                            <p>3 Stars</p>
+                            <p>2 Stars</p>
+                            <p>1 Stars</p>
+                        </div>
+                        <div>
+                            <div class="bar">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="bar">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="bar">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="bar">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="bar">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </section>
+    <script src="../js/product-page-functionality.js"></script>
 </body>
 </html>
