@@ -102,3 +102,31 @@ const sidePanelImgExample4 = document.getElementById('sidePanelImg-4');
 sidePanelImgExample4.src = productDetailsArray[0].imgExample4;
 const sidePanelImgExample5 = document.getElementById('sidePanelImg-5');
 sidePanelImgExample5.src = productDetailsArray[0].imgExample5;
+
+
+//------------------------------ product-details/reviews/shipping & payment
+
+const productDetailsButton = document.getElementById('choice-details');
+const productReviewsButton = document.getElementById('choice-reviews');
+const productShippingPaymentButton = document.getElementById('choice-shipping_payment');
+
+productDetailsButton.classList.add('button-active');
+
+productDetailsButton.addEventListener("click", () => {
+    productDetailsButton.classList.add('button-active');
+    productReviewsButton.classList.remove('button-active');
+    productShippingPaymentButton.classList.remove('button-active');
+});
+
+productReviewsButton.addEventListener("click", () => {
+    productDetailsButton.classList.remove('button-active');
+    productReviewsButton.classList.add('button-active');
+    productShippingPaymentButton.classList.remove('button-active');
+});
+
+productShippingPaymentButton.addEventListener("click", () => {
+    productDetailsButton.classList.remove('button-active');
+    productReviewsButton.classList.remove('button-active');
+    productShippingPaymentButton.classList.add('button-active');
+});
+

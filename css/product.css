@@ -6,6 +6,7 @@
     --button-selected-col: #454545;
     --dark-text: #363636;
     --gray-text: #6e6e6e;
+    --write-review-button: #6f6f6f;
 }
 
 * {
@@ -331,6 +332,7 @@ ul {
     & img {
         box-shadow: 0px 0px 10px gray;
         width: 92.5px;
+        cursor: pointer;
     }
 
     & img:last-of-type {
@@ -963,12 +965,11 @@ ul {
         & h2 {
             font-weight: 100;
         }
-    }
 
-    & button:focus {
-        color: var(--button-selected-col);
+        &.button-active {
+            color: var(--button-selected-col);
+        }
     }
-    
 }
 
 .product-details {
@@ -1172,15 +1173,15 @@ ul {
             font-size: 20px;
             font-weight: 600;
             color: var(--dark-text);
+            transition: 0.2s;
         }
     }
 
     & button:hover {
-        border-color: var(--button-non-selected-col);
+        border-color: var(--write-review-button);
 
         & h3 {
-            color: var(--gray-text);
-            transition: 0.2s;
+            color: var(--write-review-button);
         }
     }
 
