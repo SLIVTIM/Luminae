@@ -164,3 +164,26 @@ const productDetailsArray = [
         colorClass: 'choose-color-bag-yellow'
     }
 ]
+
+const reviewsArray = [
+    {
+        stars: 5,
+        title: "Its really amazing",
+        author: "Sara machnail",
+        like: "3",
+        dislike: "1",
+        Advantages: "Color, Size",
+        Disadvantages: "",
+        Review: "What sets 5 Star Shoulder Bag apart from other brands is their ability to create timeless pieces that never go out of style. Their designs are sophisticated and elegant, catering to individuals who appreciate refined fashion. Whether it's a formal event or a casual outing, their Bags effortlessly elevates any ensemble."
+    },
+    {
+        stars: 4,
+        title: "I was satisfied but...",
+        author: "Mini rey",
+        like: "2",
+        dislike: "4",
+        Advantages: "Size, style",
+        Disadvantages: "The color was a little lighter than the photo ",
+        Review: "The fabric used in this bag line is of superior quality, providing a luxurious feel against the skin. It not only looks stunning but also feels incredibly comfortable to use. The attention to detail in every stitch and seam is evident, making each piece a work of art."
+    }
+]

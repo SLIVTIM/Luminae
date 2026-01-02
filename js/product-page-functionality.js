@@ -130,3 +130,79 @@ productShippingPaymentButton.addEventListener("click", () => {
     productShippingPaymentButton.classList.add('button-active');
 });
 
+//-------------------------------  reviews 
+
+const reviewWrapper = document.querySelector('.reviews-second-part');
+
+reviewsArray.forEach((reviewContent) => {
+    const singleReview = document.createElement('div');
+    singleReview.classList.add('single-review');
+
+    const reviewContentUppedPart = document.createElement('div');
+    reviewContentUppedPart.classList.add('single-review-upper-part');
+    const reviewContentMiddlePart = document.createElement('div');
+    reviewContentMiddlePart.classList.add('single-review-middle-part');
+    const reviewDevider = document.createElement('div');
+    reviewDevider.classList.add('review-devider');
+    singleReview.append(reviewContentUppedPart, reviewContentMiddlePart, reviewDevider);
+
+    
+    const reviewContentUppedPartDiv1 = document.createElement('div');
+    const reviewContentUppedPartDiv2 = document.createElement('div');
+    reviewContentUppedPart.append(reviewContentUppedPartDiv1, reviewContentUppedPartDiv2);
+
+    const div1Div1 = document.createElement('div');
+    const div1Div2 = document.createElement('div');
+    reviewContentUppedPartDiv1.append(div1Div1, div1Div2);
+
+    for (let index = 0; index < reviewContent.stars; index++) {
+        const reviewStar = document.createElement('img');
+        reviewStar.src = '../logos-product/Star-reviews.svg';
+        reviewStar.alt = 'star';
+        div1Div1.append(reviewStar)
+    };
+
+    const reviewTitle = document.createElement('h3');
+    reviewTitle.textContent = reviewContent.title;
+    const reviewAuthor = document.createElement('p');
+    reviewAuthor.textContent = "by " + reviewContent.author;
+    div1Div2.append(reviewTitle, reviewAuthor);
+
+    const imgLike = document.createElement('img');
+    imgLike.src = '../logos-product/like.svg';
+    imgLike.alt = 'like';
+
+    const likeAmount = document.createElement('h3');
+    likeAmount.textContent = reviewContent.like;
+    const likeDevider = document.createElement('div');
+    
+    const imgDislike = document.createElement('img');
+    imgDislike.src = '../logos-product/dislike.svg';
+    imgDislike.alt = 'dislike';
+
+    const dislikeAmount = document.createElement('h3');
+    dislikeAmount.textContent = reviewContent.dislike;
+    reviewContentUppedPartDiv2.append(imgLike, likeAmount, likeDevider, imgDislike, dislikeAmount);
+
+    const reviewContentMiddlePartDiv1 = document.createElement('div');
+    const reviewContentMiddlePartDiv2 = document.createElement('div');
+    reviewContentMiddlePart.append(reviewContentMiddlePartDiv1, reviewContentMiddlePartDiv2);
+
+    const advantages = document.createElement('h3');
+    advantages.textContent = "Advantages";
+    const disadvantages = document.createElement('h3');
+    disadvantages.textContent = "Disadvantages";
+    const reviewText = document.createElement('h3');
+    reviewText.textContent = "Review";
+    reviewContentMiddlePartDiv1.append(advantages, disadvantages, reviewText);
+
+    const advantagesUser = document.createElement('h3');
+    advantagesUser.textContent = reviewContent.Advantages;
+    const disadvantagesUser = document.createElement('h3');
+    disadvantagesUser.textContent = reviewContent.Disadvantages;
+    const reviewTextUser = document.createElement('h3');
+    reviewTextUser.textContent = reviewContent.Review;
+    reviewContentMiddlePartDiv2.append(advantagesUser, disadvantagesUser, reviewTextUser);
+
+    reviewWrapper.append(singleReview);
+});
